@@ -1,0 +1,53 @@
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Деп у казик</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="casino-container">
+        <div class="game-area">
+            <h1>Деп у казик</h1>
+            
+            <div class="game-description">
+                <p>У тебе є багато друзів? Є багато речей і мноооого всього?</p>
+                <p>Пиставляєм Деп у казино!!!</p>
+                <p>Постав ставку свого друга, якусь річ або навіть нерухомість!</p>
+                <p>Натискай кнопку ДЕПНУТЬ і вигравай великі виплати!!!</p>
+            </div>
+            
+            <div class="slots">
+                <div class="slot" id="slot1">🍋</div>
+                <div class="slot" id="slot2">🍋</div>
+                <div class="slot" id="slot3">🍋</div>
+            </div>
+            
+            <div class="bet-input">
+                <p>Що ви будете депнути?</p>
+                <input type="text" id="betInput" placeholder="Введіть друга, річ або нерухомість">
+                <p id="lostItemsText"></p>
+            </div>
+            
+            <button class="spin-btn" id="spinBtn" disabled>ДЕПНУТЬ!</button>
+            <div class="result" id="result"></div>
+        </div>
+
+        <div class="paytable">
+            <h2>Виплати</h2>
+            <ul>
+                <li><span>🍋🍋🍋</span> <span class="win">x10 (Зберігаєш ставку + бонус!)</span></li>
+                <li><span>7️⃣7️⃣7️⃣</span> <span class="win">ДЖЕКПОТ! (Все твоє!)</span></li>
+                <li><span>🍋🍋</span> <span class="win">x2 (Мінімальний виграш)</span></li>
+                <li><span>🥝🥝 + 5</span> <span class="win">x5 (Гарний куш!)</span></li>
+                <li><span>🍒🍒🍒</span> <span class="win">x5 (Вітаємо!)</span></li>
+                <li><span>🍇🍇🍇</span> <span class="win">x5 (Ти на ході!)</span></li>
+                <li><span>🍊🍊🍊</span> <span class="win">x3 (Не погано)</span></li>
+                <li><span>🔔🔔🔔</span> <span class="win">x3 (Повезло!)</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
