@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
@@ -9,26 +10,30 @@
     <div class="casino-container">
         <div class="game-area">
             <h1>Деп у казик</h1>
-            
+
             <div class="game-description">
-                <p>У тебе є багато друзів? Є багато речей і мноооого всього?</p>
-                <p>Пиставляєм Деп у казино!!!</p>
+                <p>У тебе є багато друзів? Є багато речей і мнооого всього?</p>
+                <p>Поставляєм Деп у казино!!!</p>
                 <p>Постав ставку свого друга, якусь річ або навіть нерухомість!</p>
                 <p>Натискай кнопку ДЕПНУТЬ і вигравай великі виплати!!!</p>
             </div>
-            
+
+            <div class="balance">
+                <p>Баланс: <span id="balanceAmount">0</span> USD</p>
+            </div>
+
             <div class="slots">
                 <div class="slot" id="slot1">🍋</div>
                 <div class="slot" id="slot2">🍋</div>
                 <div class="slot" id="slot3">🍋</div>
             </div>
-            
+
             <div class="bet-input">
-                <p>Що ви будете депнути?</p>
-                <input type="text" id="betInput" placeholder="Введіть друга, річ або нерухомість">
+                <p>Що ви будете депать?</p>
+                <input type="text" id="betInput" placeholder="Введіть друга, річ або нерухомість" oninput="validateBetInput()" />
                 <p id="lostItemsText"></p>
             </div>
-            
+
             <button class="spin-btn" id="spinBtn" disabled>ДЕПНУТЬ!</button>
             <div class="result" id="result"></div>
         </div>
@@ -44,10 +49,13 @@
                 <li><span>🍇🍇🍇</span> <span class="win">x5 (Ти на ході!)</span></li>
                 <li><span>🍊🍊🍊</span> <span class="win">x3 (Не погано)</span></li>
                 <li><span>🔔🔔🔔</span> <span class="win">x3 (Повезло!)</span></li>
+                <li><span>🍏🍏🍏</span> <span class="win">x4 (Молодець!)</span></li>
+                <li><span>🍌🍌🍌</span> <span class="win">x6 (Потужний виграш!)</span></li>
+                <li><span>🍉🍉🍉</span> <span class="win">x7 (Фруктовий джекпот!)</span></li>
+                <li><span>🍍🍍🍍</span> <span class="win">x8 (Бонуси чекають!)</span></li>
             </ul>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
